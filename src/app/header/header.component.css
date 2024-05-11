@@ -1,0 +1,30 @@
+nav img{ width: 50px;}
+nav{
+    color:orange;
+    font-size: 18px;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid orange;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+ a{
+    color: orange;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    background-color: orange;
+} 
+nav ul{
+    float: right;
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+li a{
+    cursor: pointer;
+}

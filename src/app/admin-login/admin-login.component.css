@@ -1,0 +1,26 @@
+div{
+    margin-top: 20px;
+    text-align: center;
+}
+input{
+    margin:auto;
+    width:300px;
+}
+h1{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+button{
+    outline-color: orange;
+    border-color: orange;
+
+    color: orange;
+}
+button:active:hover{
+    color: white;
+}
+button:hover{
+    color: white;
+    background-color: orange;
+}

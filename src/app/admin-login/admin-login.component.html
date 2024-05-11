@@ -1,0 +1,16 @@
+<div>
+<h1>Login</h1>
+<form (ngSubmit)="adminLogin()">
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">UserID</label>
+    <input type="text" [(ngModel)]="admin.userId" class="form-control" id="userID" name="userId">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Password</label>
+    <input type="password" [(ngModel)]="admin.password" class="form-control" id="password" name="password" aria-describedby="passwordHelpBlock">
+  </div>
+  <div><button type="submit" class="btn btn-outline-warning">Login</button></div>
+  
+
+</form>
+</div>

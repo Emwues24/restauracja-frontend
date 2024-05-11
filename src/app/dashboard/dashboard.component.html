@@ -1,0 +1,45 @@
+<br>
+<div class="container" name="main">
+    <label for="searchNumerZamowienia">Numer zamówienia:</label>
+    <input class="form-control" type="text" id="searchNumerZamowienia" [(ngModel)]="searchNumerZamowienia" (input)="applyFilter()">
+  
+    <label for="searchNumerStolika">Numer stolika:</label>
+    <input class="form-control" type="text" id="searchNumerStolika" [(ngModel)]="searchNumerStolika" (input)="applyFilter()">
+  
+    <label for="searchOplacone">Opłacone?</label>
+    <select class="form-control" id="searchOplacone" [(ngModel)]="searchOplacone" (change)="applyFilter()">
+      <option value="">Wszystko</option>
+      <option value="1">Tak</option>
+      <option value="0">Nie</option>
+    </select>
+  <br>
+<table class="table table-bordered">
+<thead>
+    <tr>
+      <th>Numer Zamówienia</th>
+       <th>Numer Stolika</th>
+       <th>Opłacone?</th>
+       <th>Akcje</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let zamowienie of filteredData">
+        <td>{{zamowienie.numerZamowienia}}</td>
+        <td>{{zamowienie.numerStolika}}</td>
+        <td>{{zamowienie.oplacone === 1 ? 'Tak' : 'Nie' }}</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-outline-warning" (click)="deleteZamowienie(zamowienie.numerZamowienia)">Usuń</button>
+            <button type="button" class="btn btn-outline-warning" (click)="updateOplacone(zamowienie.numerZamowienia)">Zmień</button>
+            </div>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+
+<nav>
+  <button name="logoutbtn" type="button" class="btn btn-outline-warning" (click)="logout()">Wyloguj</button>
+  <button name="swpbtn" type="button" class="btn btn-outline-warning" (click)="swap()">Dane Zamówień</button>
+</nav>

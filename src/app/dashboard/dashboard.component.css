@@ -1,0 +1,39 @@
+button{
+    outline-color: orange;
+    border-color: orange;
+    color: orange;
+}
+button:active:hover{
+    color: white;
+}
+button:hover{
+    color: white;
+    background-color: orange;
+}
+button[name="logoutbtn"]{
+   text-align: center;
+   margin:auto;
+   float: right;
+}
+button[name="swpbtn"]{
+    text-align: center;
+    margin:auto;
+ }
+ nav {
+    color: orange;
+    font-size: 18px;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid orange;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+div[name="main"]{
+    margin-bottom: 90px;
+}

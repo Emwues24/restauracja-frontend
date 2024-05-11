@@ -1,0 +1,47 @@
+<div name="main" class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <img src="https://bi.im-g.pl/im/07/e0/1c/z30279175IH,Domowa-pizza.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p class="card-text">Pyszna włoska pizza z pieca, a na niej sos pomidorowy, ser, pomidory, bazylia i oregano.</p>
+              <button class="btn btn-outline-warning" (click)="dodajDoKoszyka(1)">Dodaj do zamówienia</button>
+            </div>
+          </div>          
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/425677155704373249/1198356446040043680/fotolia_109759077_subscription_monthly_m-900x600.png?ex=65be9b69&is=65ac2669&hm=928f5f528f77d9aef315461f2ea0f30f09c4539331c7506822e2b28dc9cdc5a3&" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Spaghetti Bolognese</h5>
+              <p class="card-text">Makaron Spaghetti z sosem bolognese, podawany wraz z serem parmezan.</p>
+              <button class="btn btn-outline-warning" (click)="dodajDoKoszyka(2)">Dodaj do zamówienia</button>
+            </div>
+          </div>  
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <img src="https://noweja.pl/wp-content/uploads/2023/03/shutterstock_2178675985-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Zupa Pomidorowa</h5>
+              <p class="card-text">Zupa pomidorowa ozdobiona bazylią i podawana z grzankami.</p>
+              <button class="btn btn-outline-warning" (click)="dodajDoKoszyka(3)">Dodaj do zamówienia</button>
+            </div>
+          </div>  
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1061037198/photo/fried-dumplings-stuffed-with-cabbage-and-meat-sprinkled-with-bacon-greaves-and-chopped.jpg?s=612x612&w=0&k=20&c=b8U5k8SmvEkqQez5sDXk-38R0vHfgFlU7hfaWs_DRUQ=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pierogi Ruskie</h5>
+              <p class="card-text">Porcja sześciu pierogów ruskich podawane wraz z karmelizowaną cebulą.</p>
+              <button class="btn btn-outline-warning" (click)="dodajDoKoszyka(4)">Dodaj do zamówienia</button>
+            </div>
+          </div>     
+      </div>
+  </div>
+
+
+<nav>
+<a href="/cart" name="kosz" class="btn btn-outline-warning">{{Koszyk}}</a>
+</nav>

@@ -1,0 +1,49 @@
+div[name="mn"]{
+    margin: 10px;
+}
+div[name="wybor"]{
+    float: right;
+    margin-right: 1%;
+}
+div[name="wybor"] select{
+    text-align: right;
+}
+div[name="ciski"]{
+    margin-top: 10px;
+}
+
+button{
+    outline-color: orange;
+    border-color: orange;
+    color: orange;
+}
+button:active:hover{
+    color: white;
+}
+button:hover{
+    color: white;
+    background-color: orange;
+}
+button:disabled{
+    outline-color: orange;
+    border-color: orange;
+        color: white;
+    background-color: orange;
+}
+button[name="minus"]{
+    font-size: 12px;
+}
+
+a[name="kosz"]{
+    margin-top: 24px;
+    outline-color: orange;
+    border-color: orange;
+    color: orange;
+}
+a[name="kosz"]:active:hover{
+    color: white;
+}
+a[name="kosz"]:hover{
+    color: white;
+    background-color: orange;
+}

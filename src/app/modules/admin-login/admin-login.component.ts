@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Admin } from '../admin';
+import { Admin } from '../../models/admin';
 import { FormsModule } from '@angular/forms';
-import { LoginuserService } from '../loginuser.service';
+import { LoginuserService } from './loginuser.service';
 import { Router } from '@angular/router';
 
 

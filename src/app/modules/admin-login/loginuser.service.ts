@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Admin } from './admin';
-import {Md5} from 'ts-md5';
+import { Admin } from '../../models/admin';
+import { sha256 } from 'js-sha256';
 
 
 @Injectable({
@@ -15,7 +15,7 @@ export class LoginuserService {
 
   loginUser(admin: Admin):Observable<object>{
     this.user.userId=admin.userId;
-    this.user.password=Md5.hashStr(admin.password);
+    this.user.password=sha256.hex(admin.password);
     return this.httpClient.post(`${this.baseUrl}`,this.user);
   }
 }

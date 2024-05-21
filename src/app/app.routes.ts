@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
-import { AdminLoginComponent } from './admin-login/admin-login.component';
-import { HomeComponent } from './home/home.component';
-import { MenuComponent } from './menu/menu.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdminLoginComponent } from './modules/admin-login/admin-login.component';
+import { HomeComponent } from './modules/home/home.component';
+import { MenuComponent } from './modules/menu/menu.component';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { authGuard } from './shared/auth.guard';
 import { authGuardLog } from './shared/auth.guardlog';
-import { CartComponent } from './cart/cart.component';
-import { DetailsComponent } from './details/details.component';
+import { CartComponent } from './modules/cart/cart.component';
+import { DetailsComponent } from './modules/details/details.component';
 
 export const routes: Routes = [
     {path:'', component:HomeComponent , title: "Restauracja :)"},
